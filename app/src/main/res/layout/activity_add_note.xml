@@ -39,11 +39,13 @@
 
     <EditText
         android:id="@+id/etNote"
+        android:background="@drawable/bg_edit_pink"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
         android:hint="etNote.."
         android:lines="5"
-        android:gravity="top|left"
+        android:gravity="top"
 
         />
 
@@ -55,7 +57,7 @@
 
 
         <Button
-            android:background="@android:color/transparent"
+            android:background="@drawable/bg_edit_pink"
             android:textAllCaps="false"
             android:drawableLeft="@drawable/ic_add_a_photo_pink_600_24dp"
             android:id="@+id/btnaddphoto"
@@ -63,13 +65,13 @@
             android:text="add photo"
             android:layout_height="wrap_content"
             />
-        <View
-            android:layout_width="0dp"
-            android:layout_height="1dp"
-            android:layout_weight="1"/>
+           <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_weight="1"/>
 
         <Button
-            android:background="@android:color/transparent"
+            android:background="@drawable/bg_edit_pink"
             android:textAllCaps="false"
             android:drawableLeft="@drawable/ic_keyboard_voice_pink_600_24dp"
             android:id="@+id/btnaddvoicenote"
@@ -80,6 +82,8 @@
 
 </LinearLayout>
         <Button
+            android:background="@drawable/bg_button_pink"
+            android:layout_marginTop="4dp"
             android:id="@+id/btnsave"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

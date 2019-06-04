@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewNote">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+
+
+    <TextView
+        android:layout_marginTop="55dp"
+        android:textSize="30dp"
+        android:text="Mobile development be lit"
+        android:textColor="@color/textColor"
+        android:id="@+id/text"
+        android:gravity="top|center"
+        android:background="@drawable/lily"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+</TextView>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_marginTop="400dp"
+    android:textSize="20dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:text="Java is one of the best programing languages that you will ever use. Its massive use and ability to make awosome apps. Start using java today and be the best"/>
+
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:text="Note Taken From"
+    android:layout_marginTop="520dp"
+    android:textSize="25dp"/>
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_my_location_pink_700_24dp"
+            android:layout_marginTop="579dp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Longitude : 45.738624"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="560dp"
+            android:textSize="20dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lattitude :-1.47383"
+            android:layout_marginLeft="-198dp"
+            android:layout_marginTop="590dp"
+            android:textSize="20dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_play_circle_outline_pink_700_24dp"
+            android:layout_marginTop="640dp"
+            android:layout_marginLeft="-210dp"/>
+
+       <SeekBar
+           android:layout_width="300dp"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="640dp"
+           />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       >
+
+        <Button
+           android:drawableLeft="@drawable/ic_delete_pink_700_24dp"
+            android:text="delete"
+            android:layout_marginTop="700dp"
+            android:background="color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="230dp"/>
+
+
+        <Button
+
+            android:drawableLeft="@drawable/ic_border_color_pink_a700_24dp"
+            android:background="color/white"
+            android:text="Edit"
+            android:layout_marginTop="700dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           />
+
+
+
+    </LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>
