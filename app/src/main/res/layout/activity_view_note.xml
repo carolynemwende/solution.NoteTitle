@@ -108,7 +108,7 @@
            android:drawableLeft="@drawable/ic_delete_pink_700_24dp"
             android:text="delete"
             android:layout_marginTop="700dp"
-            android:background="color/white"
+            android:background="@color/textColor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="230dp"/>
@@ -117,7 +117,7 @@
         <Button
 
             android:drawableLeft="@drawable/ic_border_color_pink_a700_24dp"
-            android:background="color/white"
+            android:background="@color/textColor"
             android:text="Edit"
             android:layout_marginTop="700dp"
             android:layout_width="wrap_content"
