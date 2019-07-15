@@ -4,4 +4,6 @@
     <string name="title_activity_add_note">AddNoteActivity</string>
     <string name="title_activity_main2">Main2Activity</string>
     <string name="title_activity_view_note">ViewNote</string>
+    <string name="title_activity_receiver">ReceiverActivity</string>
+    <string name="title_activity_edit_note">EditNote</string>
 </resources>

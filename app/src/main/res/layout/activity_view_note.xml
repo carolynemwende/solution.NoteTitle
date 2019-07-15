@@ -27,17 +27,18 @@
         android:textSize="30dp"
         android:text="Mobile development be lit"
         android:textColor="@color/textColor"
-        android:id="@+id/text"
+        android:id="@+id/tvTitle"
         android:gravity="top|center"
         android:background="@drawable/lily"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-</TextView>
+        android:layout_height="wrap_content"/>
+
 
 <TextView
+    android:id="@+id/tvNoteText"
     android:layout_width="wrap_content"
     android:layout_height="match_parent"
-    android:layout_marginTop="400dp"
+    android:layout_marginTop="350dp"
     android:textSize="20dp"
     android:paddingLeft="10dp"
     android:paddingRight="10dp"
@@ -48,7 +49,7 @@
     android:layout_width="wrap_content"
     android:layout_height="match_parent"
     android:text="Note Taken From"
-    android:layout_marginTop="520dp"
+    android:layout_marginTop="490dp"
     android:textSize="25dp"/>
 
 
@@ -65,7 +66,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_my_location_pink_700_24dp"
-            android:layout_marginTop="579dp"
+            android:layout_marginTop="539dp"
 
             />
 
@@ -74,7 +75,7 @@
             android:layout_height="wrap_content"
             android:text="Longitude : 45.738624"
             android:paddingLeft="20dp"
-            android:layout_marginTop="560dp"
+            android:layout_marginTop="540dp"
             android:textSize="20dp"
             />
         <TextView
@@ -82,20 +83,20 @@
             android:layout_height="wrap_content"
             android:text="Lattitude :-1.47383"
             android:layout_marginLeft="-198dp"
-            android:layout_marginTop="590dp"
+            android:layout_marginTop="570dp"
             android:textSize="20dp"/>
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_play_circle_outline_pink_700_24dp"
-            android:layout_marginTop="640dp"
+            android:layout_marginTop="610dp"
             android:layout_marginLeft="-210dp"/>
 
        <SeekBar
            android:layout_width="300dp"
            android:layout_height="wrap_content"
-           android:layout_marginTop="640dp"
+           android:layout_marginTop="610dp"
            />
     </LinearLayout>
 
@@ -105,9 +106,10 @@
        >
 
         <Button
+            android:id="@+id/btnDelete"
            android:drawableLeft="@drawable/ic_delete_pink_700_24dp"
             android:text="delete"
-            android:layout_marginTop="700dp"
+            android:layout_marginTop="650dp"
             android:background="@color/textColor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -115,11 +117,11 @@
 
 
         <Button
-
+                android:id="@+id/btnEdit"
             android:drawableLeft="@drawable/ic_border_color_pink_a700_24dp"
             android:background="@color/textColor"
             android:text="Edit"
-            android:layout_marginTop="700dp"
+            android:layout_marginTop="650dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
            />

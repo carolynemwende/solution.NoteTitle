@@ -11,6 +11,7 @@ import android.util.Log;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
@@ -26,6 +27,7 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
 
     ListView list;
+    List<Note> notesList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,21 +48,31 @@ public class MainActivity extends AppCompatActivity {
     list= findViewById(R.id.list);
 
 
+
     }
 
 private void displayNotes() {
     DatabaseHelper  databaseHelper = new DatabaseHelper(getBaseContext(),"notes",null,1);
-    List<Note> notesList = new ArrayList<Note>();
+    notesList = new ArrayList<Note>();
     notesList = databaseHelper.getNotes();
     Log.d("MYNOTES","my database has"+notesList.size()+"notes");
 
     NotesAdapter notesAdapter= new NotesAdapter(getBaseContext(),0,notesList);
 
-}
-public void displayNotesAdapter(){
-    List<String> nameLists= new ArrayList<String>();
-}
+    NotesAdapter NotesAdapter= new NotesAdapter(this,android.R.layout.simple_list_item_1,notesList);
+    list.setAdapter(notesAdapter);
+    list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        @Override
+        public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+            Note clickedNote =notesList.get(position);
+            Intent intent = new Intent(getBaseContext(),ViewNote.class);
+            intent.putExtra("NOTE_ID",clickedNote.getId());
+            startActivity(intent);
+        }
+    });
 
+
+}
 public void displayNamesMethod (){
         List<String> nameLists= new ArrayList<String>();
         nameLists.add("Carol Mwende");
@@ -86,7 +98,7 @@ public void displayNamesMethod (){
     protected void onResume() {
         super.onResume();
         displayNotes();
-        displayNotesAdapter();
+
 
 //        displayNamesMethod();
     }
